@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201214203316/7-Future-Technologies-That-Can-Change-The-World.jpg",
+    "author_image": "https://randomuser.me/api/portraits/women/1.jpg",
+    "title": "5 Technologies That Will Change the Future",
+    "author_name": "Jane Doe",
+    "date": "2022-01-01",
+    "duration": 10,
+    "tags": ["Technology", "Future"]
+  },
+  {
+    "id": 2,
+    "image": "https://blog-media.byjusfutureschool.com/bfs-blog/2022/12/19070215/Article-Image-Intrinsic-size-945%C3%97498.jpg",
+    "author_image": "https://randomuser.me/api/portraits/men/2.jpg",
+    "title": "How Artificial Intelligence is Revolutionizing Healthcare",
+    "author_name": "John Smith",
+    "date": "2022-01-15",
+    "duration": 8,
+    "tags": ["Artificial Intelligence", "Healthcare"]
+  },
+  {
+    "id": 3,
+    "image": "https://www.237online.com/wp-content/uploads/2023/02/blockchain.jpg",
+    "author_image": "https://randomuser.me/api/portraits/women/3.jpg",
+    "title": "The Rise of Blockchain Technology",
+    "author_name": "Emily Jones",
+    "date": "2022-02-01",
+    "duration": 12,
+    "tags": ["Blockchain", "Technology"]
+  },
+  {
+    "id": 4,
+    "image": "https://imageio.forbes.com/specials-images/imageserve/60fa55b0bb0508f4ac956653/10-inspiring-examples-of-how-XR-technology--augmented--mixed--and-virtual-reality--is/960x0.jpg?format=jpg&width=960",
+    "author_image": "https://randomuser.me/api/portraits/men/4.jpg",
+    "title": "The Future of Virtual Reality in Education",
+    "author_name": "David Lee",
+    "date": "2022-02-15",
+    "duration": 15,
+    "tags": ["Virtual Reality", "Education"]
+  },
+  {
+    "id": 5,
+    "image": "https://images.squarespace-cdn.com/content/v1/55181a36e4b05c72e7f6a2a3/1644641466966-XP7PGG3G9TDHE49KB15Y/examples-of-IoT.png?format=750w",
+    "author_image": "https://randomuser.me/api/portraits/women/5.jpg",
+    "title": "How the Internet of Things is Changing Our Lives",
+    "author_name": "Alice Green",
+    "date": "2022-03-01",
+    "duration": 7,
+    "tags": ["Internet of Things", "Technology"]
+  }
+]
