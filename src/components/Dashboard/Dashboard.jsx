@@ -9,10 +9,10 @@ const Dashboard = () => {
     const bookmarkPost = (id) => {
         setbookmarkCount(bookmarkCount+1)
     }
-    // const [spentTime,setspentTime] = useState(0);
-    // const spentTime = (id) => {
-    //     setbookmarkCount(spentTime)
-    // }
+    const [spentTime,setspentTime] = useState(0);
+    const timeSpent = (duration) => {
+        setspentTime(spentTime+duration)
+    }
     const [posts,setPosts] = useState([]);
     useEffect(()=>{
         fetch("data.json")
@@ -23,11 +23,11 @@ const Dashboard = () => {
         <div className="dashboard">
             <div className="products">
             {
-                posts.map(post => <Post key={post.id} post={post} bookmarkPost={bookmarkPost}></Post>)
+                posts.map(post => <Post key={post.id} post={post} bookmarkPost={bookmarkPost} timeSpent={timeSpent}></Post>)
             }
             </div>
             <div className="cart">
-                <SpentTime></SpentTime>
+                <SpentTime spentTime={spentTime}></SpentTime>
                 <Bookmarks bookmarkCount={bookmarkCount}></Bookmarks>
             </div>
         </div>

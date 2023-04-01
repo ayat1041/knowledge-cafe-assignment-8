@@ -16,6 +16,7 @@
     text-decoration-line: underline;
     color: #6047EC;
     margin-bottom: 38px;
+    cursor: pointer;
 }
 
 .post img {

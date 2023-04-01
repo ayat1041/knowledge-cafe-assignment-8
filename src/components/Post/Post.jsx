@@ -5,10 +5,7 @@ import "./Post.css";
 const Post = (props) => {
   const { id, image, author_image, title, author_name, date, duration, tags } =
     props.post;
-  const {bookmarkPost} = props; 
-//   const bookmarkPost = () => {
-//     console.log("clicked");
-//   }
+  const {bookmarkPost,timeSpent} = props;
   return (
     <div className="post">
       <img src={image} />
@@ -30,7 +27,7 @@ const Post = (props) => {
           <h6>#{tag}</h6>
         ))}
       </div>
-      <a href="">Mark as read</a>
+      <a onClick={()=>{timeSpent(duration)}}>Mark as read</a>
     </div>
   );
 };
