@@ -7,11 +7,17 @@ import React, { useEffect, useState } from 'react';
 const Dashboard = () => {
     const [bookmarkCount,setbookmarkCount] = useState(0);
     const [bookmark,setBookmark] = useState([]);
-    const bookmarkPost = (id,title) => {
+    const bookmarkPost = (title) => {
         setbookmarkCount(bookmarkCount+1)
         let newArr = [...bookmark,title];
+        if(bookmark.includes(title)){
+            console.log("already present");
+        }else{
+            console.log("new item");
+        }
         setBookmark(newArr);
-        console.log(bookmark);
+        // console.log(bookmark);
+
     }
     const [spentTime,setspentTime] = useState(0);
     const timeSpent = (duration) => {
