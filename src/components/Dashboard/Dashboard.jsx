@@ -6,8 +6,12 @@ import React, { useEffect, useState } from 'react';
 // import React from 'react';
 const Dashboard = () => {
     const [bookmarkCount,setbookmarkCount] = useState(0);
-    const bookmarkPost = (id) => {
+    const [bookmark,setBookmark] = useState([]);
+    const bookmarkPost = (id,title) => {
         setbookmarkCount(bookmarkCount+1)
+        let newArr = [...bookmark,title];
+        setBookmark(newArr);
+        console.log(bookmark);
     }
     const [spentTime,setspentTime] = useState(0);
     const timeSpent = (duration) => {
@@ -28,7 +32,7 @@ const Dashboard = () => {
             </div>
             <div className="cart">
                 <SpentTime spentTime={spentTime}></SpentTime>
-                <Bookmarks bookmarkCount={bookmarkCount}></Bookmarks>
+                <Bookmarks bookmarkCount={bookmarkCount} bookmark={bookmark}></Bookmarks>
             </div>
         </div>
     );

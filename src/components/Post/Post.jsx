@@ -18,7 +18,7 @@ const Post = (props) => {
           </div>
         </div>
         <h4 className="post__info--read">
-          {duration} min read<span onClick={()=>{bookmarkPost(id)}}><FontAwesomeIcon icon={faBookmark} /></span>
+          {duration} min read<span onClick={()=>{bookmarkPost(id,title)}}><FontAwesomeIcon icon={faBookmark} /></span>
         </h4>
       </div>
       <h1 className="post--title">{title}</h1>
