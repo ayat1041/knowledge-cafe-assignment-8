@@ -5,6 +5,10 @@ import "./Post.css";
 const Post = (props) => {
   const { id, image, author_image, title, author_name, date, duration, tags } =
     props.post;
+  const {bookmarkPost} = props; 
+//   const bookmarkPost = () => {
+//     console.log("clicked");
+//   }
   return (
     <div className="post">
       <img src={image} />
@@ -17,7 +21,7 @@ const Post = (props) => {
           </div>
         </div>
         <h4 className="post__info--read">
-          {duration} min read<span><FontAwesomeIcon icon={faBookmark} /></span>
+          {duration} min read<span onClick={()=>{bookmarkPost(id)}}><FontAwesomeIcon icon={faBookmark} /></span>
         </h4>
       </div>
       <h1 className="post--title">{title}</h1>
