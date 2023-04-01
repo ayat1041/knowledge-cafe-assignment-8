@@ -3,8 +3,16 @@
     padding: 26px;
     background: rgba(17, 17, 17, 0.05);
     border-radius: 8px;
+
 }
 
+@media only screen and (min-width: 577px) {
+    .bookmarks__container {
+        /* new */
+        position: sticky;
+        top: 140px;
+    }
+}
 .bookmarks__container .heading {
     color: #111111;
     font-family: 'Exo 2';

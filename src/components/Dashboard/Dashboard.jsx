@@ -3,13 +3,16 @@ import Post from '../Post/Post';
 import SpentTime from '../SpentTime/SpentTime';
 import './Dashboard.css';
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import React from 'react';
 const Dashboard = () => {
+    const notify = () => toast("Already Bookmarked !");
     const [bookmarkCount,setbookmarkCount] = useState(0);
     const [bookmark,setBookmark] = useState([]);
     const bookmarkPost = (title) => {
         setbookmarkCount(bookmarkCount+1)
-        let newArr = [...bookmark,title];
+        let newArr = [title,...bookmark];
         if(bookmark.includes(title)){
             console.log("already present");
         }else{

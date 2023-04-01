@@ -4,6 +4,15 @@
     border-radius: 8px;
     padding: 21px 50px;
     margin: 24px;
+
+}
+
+@media only screen and (min-width: 577px) {
+    .spent__time {
+        /* new */
+        position: sticky;
+        top: 0;
+    }
 }
 
 .spent__time p {
@@ -13,12 +22,14 @@
     line-height: 160%;
     color: #6047EC;
 }
+
 @media only screen and (max-width: 576px) {
-    .spent__time{
+    .spent__time {
         padding: 12px 26px;
         margin: 0;
     }
-    .spent__time p{
+
+    .spent__time p {
         font-size: 16px;
     }
 }
