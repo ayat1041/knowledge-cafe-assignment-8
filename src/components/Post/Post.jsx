@@ -14,7 +14,7 @@ const Post = (props) => {
           <img src={author_image} />
           <div className="post__info__author">
             <h1 className="author_name">{author_name}</h1>
-            <h4 className="posted_date">{date}</h4>
+            <h4 className="posted_date">{date} (14 Days ago)</h4>
           </div>
         </div>
         <h4 className="post__info--read">
