@@ -1,0 +1,24 @@
+.spent__time {
+    background: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+    padding: 21px 50px;
+    margin: 24px;
+}
+
+.spent__time p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: #6047EC;
+}
+@media only screen and (max-width: 576px) {
+    .spent__time{
+        padding: 12px 26px;
+        margin: 0;
+    }
+    .spent__time p{
+        font-size: 16px;
+    }
+}

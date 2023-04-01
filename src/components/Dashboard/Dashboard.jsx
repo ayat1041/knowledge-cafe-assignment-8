@@ -1,4 +1,6 @@
+import Bookmarks from '../Bookmarks/Bookmarks';
 import Post from '../Post/Post';
+import SpentTime from '../SpentTime/SpentTime';
 import './Dashboard.css';
 import React, { useEffect, useState } from 'react';
 // import React from 'react';
@@ -17,7 +19,10 @@ const Dashboard = () => {
                 posts.map(post => <Post key={post.id} post={post}></Post>)
             }
             </div>
-            <div className="cart">This is cart</div>
+            <div className="cart">
+                <SpentTime></SpentTime>
+                <Bookmarks></Bookmarks>
+            </div>
         </div>
     );
 };

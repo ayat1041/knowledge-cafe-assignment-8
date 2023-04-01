@@ -2,11 +2,9 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-.products{
-    background-color: coral;
-}
+
 .cart{
-    background-color: tomato;
+    /* background-color: tomato; */
     position: sticky;
 }
 

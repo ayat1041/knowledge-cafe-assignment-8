@@ -1,0 +1,33 @@
+.bookmarks__container {
+    margin: 24px;
+    padding: 26px;
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+}
+
+.bookmarks__container .heading {
+    color: #111111;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: left;
+    margin: 0;
+}
+
+.bookmarks__container .titles {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+}
+
+.bookmarks__container .titles h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #111111;
+    text-align: left;
+    margin: 0;
+}
